@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="com:chamodshehanka:standardShop:config:hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="studentform">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="php_example"/>
+    <schema id="7" parent="1" name="sakila"/>
+    <schema id="8" parent="1" name="student"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="thogakade"/>
+    <schema id="11" parent="1" name="world"/>
+    <table id="12" parent="2" name="customer"/>
+    <table id="13" parent="2" name="customer_orders"/>
+    <table id="14" parent="2" name="orders"/>
+    <table id="15" parent="2" name="student"/>
+    <column id="16" parent="12" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="17" parent="12" name="contact">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="18" parent="12" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="19" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="13" name="Customer_sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="13" name="orderList_oid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="22" parent="13" name="FKaj2rta72bwt17ujeubcnwxmsm">
+      <ColNames>Customer_sid</ColNames>
+    </index>
+    <index id="23" parent="13" name="UK_37jjh6rcl7j4axdfgta1c19xt">
+      <ColNames>orderList_oid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="13" name="UK_37jjh6rcl7j4axdfgta1c19xt">
+      <ColNames>orderList_oid</ColNames>
+      <UnderlyingIndexName>UK_37jjh6rcl7j4axdfgta1c19xt</UnderlyingIndexName>
+    </key>
+    <column id="25" parent="14" name="oid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="14" name="oDate">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="14" name="prioroty">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="28" parent="14" name="customer_sid">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="29" parent="14" name="FKourfi8vl2e3p74btrx3ra3qhg">
+      <ColNames>customer_sid</ColNames>
+    </index>
+    <key id="30" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>oid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="31" parent="15" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="15" name="address">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="33" parent="15" name="contact">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="34" parent="15" name="gender">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="35" parent="15" name="studentName">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="36" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

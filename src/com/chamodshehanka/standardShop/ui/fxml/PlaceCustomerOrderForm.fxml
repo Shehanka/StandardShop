@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPlaceOrder" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.standardShop.ui.controller.PlaceCustomerOrderFormController">
+   <children>
+      <Text fill="WHITE" layoutX="309.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place Customer Order">
+         <font>
+            <Font name="Abel" size="22.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cbxCustomerID" focusColor="WHITE" labelFloat="true" layoutX="128.0" layoutY="100.0" prefHeight="35.0" prefWidth="121.0" promptText="Customer ID" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnAddCustomer" layoutX="259.0" layoutY="100.0" onAction="#addCustomerAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtOrderID" focusColor="WHITE" labelFloat="true" layoutX="438.0" layoutY="105.0" promptText="Order ID" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" focusColor="WHITE" labelFloat="true" layoutX="128.0" layoutY="162.0" prefHeight="29.0" prefWidth="228.0" promptText="Customer Name" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="txtOrderDate" defaultColor="#3498db" layoutX="438.0" layoutY="162.0" prefHeight="29.0" prefWidth="145.0" promptText="Order Date" />
+      <JFXComboBox fx:id="cbxItemCode" focusColor="WHITE" labelFloat="true" layoutX="128.0" layoutY="229.0" prefHeight="35.0" prefWidth="87.0" promptText="Item Code" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtDescription" focusColor="WHITE" labelFloat="true" layoutX="239.0" layoutY="235.0" promptText="Description" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQtyOnHand" focusColor="WHITE" labelFloat="true" layoutX="411.0" layoutY="235.0" prefHeight="29.0" prefWidth="78.0" promptText="Qty on hand" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" focusColor="WHITE" labelFloat="true" layoutX="517.0" layoutY="235.0" prefHeight="29.0" prefWidth="63.0" promptText="Qty" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUnitPrice" focusColor="WHITE" labelFloat="true" layoutX="600.0" layoutY="235.0" prefHeight="29.0" prefWidth="78.0" promptText="Unit Price" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="tblOrder" layoutX="59.0" layoutY="281.0" prefHeight="200.0" prefWidth="685.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="109.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="246.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="99.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="126.0" text="Unit Price" />
+            <TableColumn fx:id="colAmount" prefWidth="104.0" text="Amount" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtTotalAmount" focusColor="WHITE" labelFloat="true" layoutX="598.0" layoutY="503.0" promptText="Total Amount" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" layoutX="646.0" layoutY="541.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRemoveItem" layoutX="536.0" layoutY="541.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #e74c3c;" stylesheets="@../css/main-menu-style.css" text="Remove Item" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnHome" buttonType="RAISED" layoutX="33.0" layoutY="43.0" onAction="#gotoMainMenu" prefHeight="50.0" prefWidth="50.0" ripplerFill="#145d8d" />
+   </children>
+</AnchorPane>

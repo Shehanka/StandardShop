@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootCustomerForm" prefHeight="400.0" prefWidth="600.0" styleClass="fxml" stylesheets="@../css/main-menu-style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.standardShop.ui.controller.CustomerFormController">
+   <children>
+      <Text fill="WHITE" layoutX="215.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Customers">
+         <font>
+            <Font name="Abel" size="22.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtCustomerID" focusColor="WHITE" labelFloat="true" layoutX="54.0" layoutY="80.0" prefHeight="29.0" prefWidth="110.0" promptText="Customer ID" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSearchCustomer" layoutX="54.0" layoutY="131.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDeleteCustomer" layoutX="447.0" layoutY="131.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #e74c3c;" stylesheets="@../css/main-menu-style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAddCustomer" layoutX="184.0" layoutY="131.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdateCustomer" layoutX="317.0" layoutY="131.0" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="184.0" layoutY="80.0" prefHeight="29.0" prefWidth="225.0" promptText="Address" style="-fx-prompt-text-fill: #fff; -fx-text-inner-color: #fff;" unFocusColor="WHITE">
+         <font>
+            <Font name="Abel" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cbxGender" focusColor="WHITE" labelFloat="true" layoutX="426.0" layoutY="74.0" prefHeight="35.0" prefWidth="121.0" promptText="Gender" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnClose" layoutX="447.0" layoutY="344.0" onMousePressed="#closeWindowAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #e74c3c;" stylesheets="@../css/main-menu-style.css" text="Close" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+.fxml{
+    -fx-background-color: rgba(127, 140, 141, 0.5);
+    /*-fx-shape:  "M 0 4 L 10 1 L 10 7 z";*/
+    -fx-opacity: 0.75;
+    -fx-effect: dropshadow(gaussian, #2c3e50, 50, 0, 0, 0);
+    -fx-background-insets: 10;
+    -fx-background-radius: 5;
+}
+

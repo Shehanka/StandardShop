@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootStandardShop" prefHeight="600.0" prefWidth="800.0" styleClass="fxml" stylesheets="@../css/main-menu-style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.standardShop.ui.controller.MainMenuFormController">
+   <children>
+      <Text fill="WHITE" layoutX="334.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Standard Shop ">
+         <font>
+            <Font name="Abel" size="22.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnPlaceCustomerOrder" layoutX="320.0" layoutY="192.0" onAction="#btnPlaceCustomerOrderAction" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: #3498db;" stylesheets="@../css/main-menu-style.css" text="Place Customer Order" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnManageItem" layoutX="320.0" layoutY="259.0" onAction="#btnManageItemAction" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: #3498db;" text="Manage Item" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnModifyOrders" layoutX="320.0" layoutY="323.0" onAction="#btnModifyOrdersAction" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: #3498db;" text="Modify Orders" textFill="WHITE">
+         <font>
+            <Font name="Abel" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imgClose" fitHeight="30.0" fitWidth="30.0" layoutX="754.0" layoutY="16.0" onMouseClicked="#closeWindowAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
